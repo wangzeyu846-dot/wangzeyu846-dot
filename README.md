@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=8B1E3F&center=true&vCenter=true&width=620&lines=Hi+there%2C+I'm+Wang+Zeyu;From+real+needs+to+usable+AI+products;Agents+%C2%B7+RAG+%C2%B7+Product+Teardown" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=8B1E3F&center=true&vCenter=true&width=620&lines=AI+Product+Manager;From+real+needs+to+usable+AI+products;Agents+%C2%B7+RAG+%C2%B7+Product+Teardown" alt="Typing SVG" />
 
 **汪泽雨 · AI 产品经理** · 以人的需求为起点，把模糊的想法变成清晰的问题，再用可体验的原型验证 AI 产品价值。
 
