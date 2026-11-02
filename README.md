@@ -30,7 +30,7 @@
 
 ## 🤖 AI Tools
 
-**Claude Code** · **Codex** · **Cursor** · **VS Code** · **DeepSeek Harness**
+**Claude Code** · **Codex** · **Cursor** · **VS Code** · **DeepSeek Harness** · **Antigravity** · **Pi Agent**
 
 ## 📫 Let's Connect
 
