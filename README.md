@@ -28,13 +28,9 @@
 
 **发现问题** 倾听 · 观察 · 追问 → **定义价值** 场景 · 假设 · 取舍 → **做出体验** 原型 · 验证 · 反馈 → **持续迭代** 评测 · 复盘 · 改进
 
-## 🛠 Tech Stack
+## 🤖 AI Tools
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,ts,js,html,css,tailwind,vite,nodejs,git,github&perline=12" alt="Tech stack" />
-</p>
-
-**AI 工具**：Codex · Claude Code · Agent Skills　**协作**：飞书文档 · GitHub Pages
+**Claude Code** · **Codex** · **Cursor** · **VS Code** · **DeepSeek Harness**
 
 ## 📫 Let's Connect
 
