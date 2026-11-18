@@ -17,12 +17,15 @@
 
 ## 🧩 Featured Projects
 
+<!-- featured-projects:start -->
 | 项目 | 简介 | 关键词 |
 | --- | --- | --- |
-| [ai-product-business-teardown](https://github.com/wangzeyu846-dot/ai-product-business-teardown) | AI 产品深度拆解 Skill：五层分析框架，截图取证与二次核实，输出完整拆解报告 | 产品分析 · 商业模式 · Codex Skill |
-| [ai-news-skill](https://github.com/wangzeyu846-dot/ai-news-skill) | 搜集最近三天的全球 AI 资讯，核验去重后整理成中文飞书文档，附[产品介绍网站](https://wangzeyu846-dot.github.io/ai-news-skill/) | 内容产品 · 信源核验 · 飞书 |
-| [douyin-landing-page](https://github.com/wangzeyu846-dot/douyin-landing-page) | 非官方抖音产品落地页交互原型：电影式首屏转场、可交互手机演示、响应式与动效降级 | React · TypeScript · GSAP |
-| [wangzeyu846-dot.github.io](https://github.com/wangzeyu846-dot/wangzeyu846-dot.github.io) | 个人网站：三个 AI 产品概念提案（知识助手 / 任务协作 / 体验评测）与产品工作方法 | 概念提案 · 产品方法 |
+| [idea-to-launch-kit](https://github.com/wangzeyu846-dot/idea-to-launch-kit) | 面向非技术产品经理和创业者的 AI 产品开发工具包：一句话开工，AI 整理需求、分阶段实现与自检，用户判断价值并验收。基于 idea-to-launch-kit 优化。 | ai-product · chinese · entrepreneurship |
+| [wangzeyu846-dot.github.io](https://github.com/wangzeyu846-dot/wangzeyu846-dot.github.io) | 汪泽雨 · AI 产品经理的个人网站 | HTML |
+| [ai-product-business-teardown](https://github.com/wangzeyu846-dot/ai-product-business-teardown) | Codex Skill for evidence-based AI product and business teardown | — |
+| [ai-news-skill](https://github.com/wangzeyu846-dot/ai-news-skill) | 搜集最近三天全球 AI 资讯，整理成美观的中文飞书文档。A Codex skill for AI news briefs.AI news briefs to Feishu documents. A Codex skill. | — |
+| [douyin-landing-page](https://github.com/wangzeyu846-dot/douyin-landing-page) | Unofficial Douyin landing page demo with React, TypeScript, Tailwind CSS and GSAP | TypeScript |
+<!-- featured-projects:end -->
 
 ## 🧭 How I Work
 

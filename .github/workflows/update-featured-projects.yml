@@ -1,0 +1,52 @@
+name: 自动更新精选项目
+
+on:
+  schedule:
+    # 每 6 小时；避开整点。GitHub 排队可能造成延迟。
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-featured-projects.yml'
+      - 'scripts/update_featured_projects.py'
+      - 'tests/test_update_featured_projects.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-featured-projects
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.repository == 'wangzeyu846-dot/wangzeyu846-dot' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: 获取最新主页
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+
+      - name: 验证同步规则
+        run: python3 -m unittest discover -s tests -v
+
+      - name: 读取公开项目并更新列表
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_OWNER: ${{ github.repository_owner }}
+        run: python3 scripts/update_featured_projects.py --owner "$PROFILE_OWNER"
+
+      - name: 仅在列表变化时保存
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "项目列表已是最新，无需提交。"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- README.md
+          git commit -m "docs: 自动同步精选项目"
+          git push origin HEAD:main
