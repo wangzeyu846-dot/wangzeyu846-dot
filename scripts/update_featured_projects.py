@@ -17,6 +17,24 @@ from urllib.request import Request, urlopen
 START = "<!-- featured-projects:start -->"
 END = "<!-- featured-projects:end -->"
 OWNER_PATTERN = r"[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?"
+# 优先展示能说明项目用途的关键词；未知标签继续保留原文。
+TOPIC_LABELS = {
+    "ai-product": "AI 产品",
+    "nontechnical-users": "低门槛开发",
+    "mvp": "MVP",
+    "product-analysis": "产品分析",
+    "business-model": "商业模式",
+    "codex-skill": "Codex 技能",
+    "ai-news": "AI 资讯",
+    "fact-checking": "信源核验",
+    "feishu": "飞书文档",
+    "interactive-prototype": "交互原型",
+    "web-animation": "动效设计",
+    "responsive-design": "响应式布局",
+    "portfolio": "个人作品集",
+    "product-thinking": "产品思考",
+    "open-source": "开源项目",
+}
 
 
 def _validate_owner(owner: str) -> None:
@@ -106,8 +124,11 @@ def render_table(repositories: list) -> str:
         _validate_repository(repository)
         name, owner = repository["name"], repository["owner"]["login"]
         description = repository.get("description") or "暂未填写项目简介"
-        topics = repository.get("topics", [])[:3]
-        keywords = " · ".join(topics) if topics else (repository.get("language") or "—")
+        topics = repository.get("topics", [])
+        display_topics = [topic for topic in TOPIC_LABELS if topic in topics]
+        display_topics.extend(topic for topic in topics if topic not in TOPIC_LABELS)
+        keywords = (" · ".join(TOPIC_LABELS.get(topic, topic) for topic in display_topics[:3])
+                    if topics else (repository.get("language") or "—"))
         lines.append(f"| [{_cell(name)}](https://github.com/{owner}/{name}) | "
                      f"{_cell(description)} | {_cell(keywords)} |")
     return "\n".join(lines)
