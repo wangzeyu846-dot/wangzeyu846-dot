@@ -20,7 +20,7 @@
 <!-- featured-projects:start -->
 | 项目 | 简介 | 关键词 |
 | --- | --- | --- |
-| [idea-to-launch-kit](https://github.com/wangzeyu846-dot/idea-to-launch-kit) | 面向非技术产品经理和创业者的 AI 产品开发工具包：一句话开工，AI 整理需求、分阶段实现与自检，用户判断价值并验收。基于 idea-to-launch-kit 优化。 | AI 产品 · 低门槛开发 · MVP |
+| [idea-kickoff](https://github.com/wangzeyu846-dot/idea-kickoff) | 想法开工：面向非技术产品经理和创业者的 AI 产品开发工具包。从一句想法开始，让 AI 整理需求、分阶段实现与验证，你负责判断价值、确认结果。 | AI 产品 · 低门槛开发 · MVP |
 | [wangzeyu846-dot.github.io](https://github.com/wangzeyu846-dot/wangzeyu846-dot.github.io) | 汪泽雨 · AI 产品经理的个人网站 | 个人作品集 · 产品思考 · 开源项目 |
 | [ai-product-business-teardown](https://github.com/wangzeyu846-dot/ai-product-business-teardown) | 面向 Codex 的 AI 产品拆解技能：分析用户体验、商业模式、技术架构与模型成本，通过截图取证和二次核实输出报告。 | 产品分析 · 商业模式 · Codex 技能 |
 | [ai-news-skill](https://github.com/wangzeyu846-dot/ai-news-skill) | 面向 Codex 的中文 AI 资讯技能：搜集最近 72 小时的全球 AI 动态，核验去重后整理成带原文链接的飞书文档。 | AI 资讯 · 信源核验 · 飞书文档 |
