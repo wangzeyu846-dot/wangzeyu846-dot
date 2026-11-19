@@ -51,6 +51,13 @@ class SelectionTests(unittest.TestCase):
 
 
 class RenderingTests(unittest.TestCase):
+    def test_task_workbench_topics_use_product_labels_before_generic_tags(self):
+        result = featured.render_table([repo(name="all-rounder-ai", topics=[
+            "ai", "chinese", "deepseek", "electron", "multi-model", "task-card", "context-management"
+        ])])
+        self.assertIn("多模型接力 · 任务卡记忆 · 上下文管理", result)
+        self.assertNotIn("ai · chinese · deepseek", result)
+
     def test_escape_description_and_limit_topics(self):
         result = featured.render_table([repo(description='A | B\r\n<img> [x](https://evil) *bold* `code` &',
                                             topics=["one", "two", "three", "four"])])

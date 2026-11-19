@@ -20,6 +20,7 @@
 <!-- featured-projects:start -->
 | 项目 | 简介 | 关键词 |
 | --- | --- | --- |
+| [all-rounder-ai](https://github.com/wangzeyu846-dot/all-rounder-ai) | 多面手：面向研究、写作与产品规划等持续任务的本地多模型 AI 工作台。用任务卡保留目标、决定与下一步，记录员整理对话，换模型或重开窗口后接着做；支持 Mac 桌面版与网页版。 | 多模型接力 · 任务卡记忆 · 上下文管理 |
 | [idea-kickoff](https://github.com/wangzeyu846-dot/idea-kickoff) | 想法开工：面向非技术产品经理和创业者的 AI 产品开发工具包。从一句想法开始，让 AI 整理需求、分阶段实现与验证，你负责判断价值、确认结果。 | AI 产品 · 低门槛开发 · MVP |
 | [wangzeyu846-dot.github.io](https://github.com/wangzeyu846-dot/wangzeyu846-dot.github.io) | 汪泽雨 · AI 产品经理的个人网站 | 个人作品集 · 产品思考 · 开源项目 |
 | [ai-product-business-teardown](https://github.com/wangzeyu846-dot/ai-product-business-teardown) | 面向 Codex 的 AI 产品拆解技能：分析用户体验、商业模式、技术架构与模型成本，通过截图取证和二次核实输出报告。 | 产品分析 · 商业模式 · Codex 技能 |

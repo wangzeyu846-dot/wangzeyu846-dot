@@ -19,6 +19,9 @@ END = "<!-- featured-projects:end -->"
 OWNER_PATTERN = r"[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?"
 # 优先展示能说明项目用途的关键词；未知标签继续保留原文。
 TOPIC_LABELS = {
+    "multi-model": "多模型接力",
+    "task-card": "任务卡记忆",
+    "context-management": "上下文管理",
     "ai-product": "AI 产品",
     "nontechnical-users": "低门槛开发",
     "mvp": "MVP",
